@@ -34,3 +34,8 @@ body {
 .watch-more-button {
     bottom: 10%;
 }
+
+/* service description position styling */
+.service-discription-p {
+    top: 10%
+}

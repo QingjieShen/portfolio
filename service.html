@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Services</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
     <!-- Same header as index.html -->
@@ -46,69 +47,100 @@
         </nav>
     </header>
     <!-- Services carousel: including 3 services -->
-    <div id="service-type" class="category carousel slide">
+    <div id="service-type" class="category carousel slide carousel-fade">
+        <!-- category indicators -->
+        <div class="carousel-indicators position-absolute top-0">
+            <button type="button" data-bs-target="#service-type" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#service-type" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#service-type" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <!-- slides contorl button. Hidden on mobile devices -->
+        <button class="carousel-control-prev" type="button" data-mdb-target="#service-type" data-mdb-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-mdb-target="#service-type" data-mdb-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+        <!-- category slides -->
         <div class="carousel-inner">
             <div class="category-video carousel-item active">
                 <img class="d-block w-100" src="images/service-video.jpeg" alt="video production service">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>First slide label</h5>
-                    <p>Some representative placeholder content for the first slide.</p>
-                  </div>
+                <div class="carousel-caption position-absolute top-0 start-0">
+                    <div class="text-start mx-2">
+                        <h3 class="text-bg-dark bg-opacity-50 px-2 py-2">Video Production</h3>
+                    </div>
+                    <div class="service-discription-p position-absolute mx-2">
+                        <p class="text-bg-dark bg-opacity-50 px-2 py-2 text-start">Our dedicated team of video production experts has meticulously crafted a space that combines functionality, creativity, and technical excellence.</p>
+                    </div>
+                </div>
+                <!-- Pointing down arrow link to video featured projects-->
+                <div class="down-arrow text-center">
+                    <p class="mb-0 mt-3">Featured projects</p>
+                    <a class="mb-3 d-inline-block" href="#"><i class="fa-solid fa-angles-down"></i></a>
+                </div>
+                <!-- Video Production Featured projects -->
+                <div class="featured-projects container-fluid">
+                    <section class="video-1">
+                        <div class="video-box ratio ratio-16x9">
+                            <iframe class="featured-video w-100" src="https://www.youtube.com/embed/VOs2po0jWcc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                        
+                        <h3>Hand Made Sourdough Bread</h3>
+                        <p>They say that good things take time and that couldn't be ture when it comes to the art of sourdough bread</p>
+                    </section>
+                    <section class="featured-video video-2">
+                        <div class="video-box ratio ratio-16x9">
+                            <iframe src="https://www.youtube.com/embed/OWaWs86FSUY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                        <h3>Foley Exercise</h3>
+                        <p>Explore cobblestone streets, historic landmarks, and meet friendly locals. Immerse yourself in the tranquility and beauty of small-town life.They say that good things take time and that couldn't be ture when it comes to the art of sourdough bread</p>
+                    </section>
+                    <section class="featured-video video-3">
+                        <div class="video-box ratio ratio-16x9">
+                            <iframe src="https://www.youtube.com/embed/KWcMSsqt5-w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                        <h3>Short Interview</h3>
+                        <p>Join us as we uncover hidden gems and immerse ourselves in the charm of this captivating city. Get ready to be amazed.</p>
+                    </section>
+    </div>
             </div>
             <div class="category-photo carousel-item">
                 <img class="d-block w-100" src="images/service-photography.jpeg" alt="Photography service">
-                <div class="container-fluid carousel-caption d-none d-md-block">
-                    <h2 class="service-type-title">Photo graphy</h2>
-                    <p>At ClarkMediaPro we specialize in capturing the essence of life's most cherished moments. Our photography service is dedicated to immortalizing your precious memories, whether it's a heartwarming family portrait, a joyful celebration, or a significant milestone.</p>
+                <div class="carousel-caption position-absolute top-0 start-0">
+                    <div class="text-start mx-2">
+                        <h3 class="text-bg-dark bg-opacity-50 px-2 py-2">Photo graphy</h3>
+                    </div>
+                    <div class="service-discription-p position-absolute mx-2">
+                        <p class="text-bg-dark bg-opacity-50 px-2 py-2 text-start">Our photography service is dedicated to immortalizing your precious memories, whether it's a heartwarming family portrait, a joyful celebration, or a significant milestone.</p>
+                    </div>
+                </div>
+                <!-- Pointing down arrow link to video featured projects-->
+                <div class="down-arrow text-center">
+                    <p class="mb-0 mt-3">Featured projects</p>
+                    <a class="mb-3 d-inline-block" href="#"><i class="fa-solid fa-angles-down"></i></a>
                 </div>
             </div>
             <div class="category-web carousel-item">
                 <img class="d-block w-100" src="images/service-webdev.png" alt="">
-                <div class="container-fluid carousel-caption d-none d-md-block">
-                    <h2 class="service-type-title">Web Dev</h2>
-                    <p>Our skilled team of web developers harnesses the power of code and creativity to transform your visions into captivating online experiences. From stunning designs to seamless functionality, we wave our wands of expertise to craft websites that charm and captivate.</p>
+                <div class="carousel-caption position-absolute top-0 start-0">
+                    <div class="text-start mx-2">
+                        <h3 class="text-bg-dark bg-opacity-50 px-2 py-2">Web Development</h3>
+                    </div>
+                    <div class="service-discription-p position-absolute mx-2">
+                        <p class="text-bg-dark bg-opacity-50 px-2 py-2 text-start">Our skilled team of web developers harnesses the power of code and creativity to transform your visions into captivating online experiences.</p>
+                    </div>
+                </div>
+                <!-- Pointing down arrow link to video featured projects-->
+                <div class="down-arrow text-center">
+                    <p class="mb-0 mt-3">Featured projects</p>
+                    <a class="mb-3 d-inline-block" href="#"><i class="fa-solid fa-angles-down"></i></a>
                 </div>
             </div>
         </div>
-        <!-- category indicators -->
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#service-type" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#service-type" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#service-type" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          </div>
-        <!-- slides contorl button. Hidden on mobile devices -->
-        <button class="carousel-control-prev" type="button" data-bs-target="#service-type" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#service-type" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
     </div>
-    <!-- Pointing down arrow -->
-    <div class="down-arrow">
-        <p>Featured projects</p>
-        <button type="button"><i class="bi bi-chevron-compact-down"></i></button>
-    </div>
-    <!-- Featured projects: associated with the service above -->
-    <div class="featured-projects container-fluid">
-        <section class="video-1">
-            <iframe class="featured-video w-100" src="https://www.youtube.com/embed/VOs2po0jWcc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            <h3>Hand Made Sourdough Bread</h3>
-            <p>They say that good things take time and that couldn't be ture when it comes to the art of sourdough bread</p>
-        </section>
-        <section class="featured-video video-2">
-            <iframe src="https://www.youtube.com/embed/VOs2po0jWcc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            <h3>Small Town Day Tour</h3>
-            <p>Explore cobblestone streets, historic landmarks, and meet friendly locals. Immerse yourself in the tranquility and beauty of small-town life.They say that good things take time and that couldn't be ture when it comes to the art of sourdough bread</p>
-        </section>
-        <section class="featured-video video-3">
-            <iframe src="https://www.youtube.com/embed/VOs2po0jWcc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            <h3>Unfolding the beauty of Perth</h3>
-            <p>Join us as we uncover hidden gems and immerse ourselves in the charm of this captivating city. Get ready to be amazed.</p>
-        </section>
-    </div>
+
     <!-- Same footer as index.html -->
     <footer class="bg-primary">
         <div class="container-fluid">
@@ -120,7 +152,7 @@
             <p class="text-center pb-2">copyright&copy; ClarkMediaPro ALl Rights Reserved.</p>
         </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/342db6fee9.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
   </body>
 </html>
