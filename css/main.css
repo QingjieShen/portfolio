@@ -3,6 +3,7 @@ body {
     scroll-snap-type: y mandatory;
 }
 
+/* navbar logo size seting */
 .navbar-brand img {
     height: 50px;
 }
@@ -11,12 +12,19 @@ body {
     scroll-snap-align: start;
 }
 
-.home-banner {
-    background-image: url("images/main-banner.jpeg");
-    /* background-repeat: no-repeat; */
-    /* background-size: cover; */
-    /* background-position: center; */
+.banner-content {
+    background-image: url("../images/main-banner.jpeg");
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
+
+/* Set banner text position */
+.banner-content div {
+    bottom: 15%;
+}
+
 /* 
 #video-production-video {
     object-fit: cover;
