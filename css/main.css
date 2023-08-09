@@ -20,17 +20,17 @@ body {
     background-position: center;
 }
 
-/* Set banner text position */
+/* Set homepage banner text position */
 .banner-content div {
     bottom: 15%;
 }
 
-/* 
-#video-production-video {
-    object-fit: cover;
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: 0;
-} */
+/* Set homepage video description position */
+.video-description {
+    bottom: 20%;
+}
+
+/* Set homepage video link position */
+.watch-more-button {
+    bottom: 10%;
+}
