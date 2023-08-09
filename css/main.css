@@ -37,5 +37,37 @@ body {
 
 /* service description position styling */
 .service-discription-p {
-    top: 10%
+    top: 9%
+}
+
+/* Carousel indicators position styling */
+.cacrousel-indicators-position {
+    top: 14%;
+}
+
+
+@media screen and (min-width: 768px) {
+    /* service description position styling */
+.service-discription-p {
+    top: 12%
+}
+
+/* Carousel indicators position styling */
+.cacrousel-indicators-position {
+    top: 15%;
+}
+
+}
+
+@media screen and (min-width: 1200px) {
+    /* service description position styling */
+.service-discription-p {
+    top: 12%
+}
+
+/* Carousel indicators position styling */
+.cacrousel-indicators-position {
+    top: 15%;
+}
+
 }
