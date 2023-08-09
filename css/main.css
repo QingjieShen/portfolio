@@ -36,51 +36,50 @@ body {
 }
 
 /* service description position styling */
-.service-discription-p {
-    top: 9%
+.service-discription-p-video {
+    bottom: 25%;
 }
 
 /* Carousel indicators position styling */
 .cacrousel-indicators-position {
-    top: 14%;
+    bottom: 15%;
 }
-
 
 @media screen and (min-width: 768px) {
     /* service description position styling */
-.service-discription-p {
-    top: 24%
-}
+/* .service-discription-p-video {
+    bottom: 24%
+} */
 
 /* Carousel indicators position styling */
-.cacrousel-indicators-position {
+/* .cacrousel-indicators-position {
     top: 30%;
-}
+} */
 
 }
 
 @media screen and (min-width: 992px) {
     /* service description position styling */
-.service-discription-p {
+/* .service-discription-p-video {
     top: 28%
 }
 
 /* Carousel indicators position styling */
-.cacrousel-indicators-position {
+/* .cacrousel-indicators-position {
     top: 35%;
-}
+} */ 
 
 }
 
 @media screen and (min-width: 1200px) {
     /* service description position styling */
-.service-discription-p {
+/* .service-discription-p-video {
     top: 12%
 }
 
-/* Carousel indicators position styling */
+/* Carousel indicators position styling 
 .cacrousel-indicators-position {
     top: 15%;
-}
+} */
 
 }
