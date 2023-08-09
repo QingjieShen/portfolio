@@ -12,7 +12,7 @@
     <div class="slides slide1 vh-100">
         <!-- Header: contains logo, tagline, brand nane, and main nav bar -->
         <header>
-            <nav class="navbar navbar-expand-sm bg-primary">
+            <nav class="navbar bg-body-tertiary navbar-expand-md">
                 <div class="container-fluid">
                     <a href="index.html" class="navbar-brand d-flex">
                         <div class="align-self-center">
@@ -23,33 +23,30 @@
                             <p class="my-0 fs-6">Wher creativity meet visual storytelling</p>
                         </div>
                     </a>
-                    <!-- <div class="navbar-brand d-flex align-content-center justify-content-center">
-                        <div>
-                            <img class="h-100" src="images/clarkmediaprologo.svg" alt="ClarkMediaPro logo">
-                        </div>
-                        <div class="d-inline-block">
-                            <p>ClarkMediaPro</p>
-                            <p class="fs-6">Wher creativity meet visual storytelling</p>
-                        </div>
-                    </div> -->
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#main-nav" aria-controls="main-nav" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="navbar-collapse collapse" id="main-nav">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link active" href="index.html">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="service.html">Service</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="about.html">About</a>
-                            </li>
-                        </ul>
+                      </button>
+                  <div class="offcanvas offcanvas-end" tabindex="-1" id="main-nav" aria-labelledby="main-nav">
+                    <div class="offcanvas-header">
+                      <h5 class="offcanvas-title" id="main-nav">ClarkMediaPro</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
+                    <div class="offcanvas-body">
+                      <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="service.html">Service</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
                 </div>
-            </nav>
+              </nav>
         </header>
         <!-- Banner: contains banner image, welcome title, and action paragraphs -->
         <div class="home-banner">
