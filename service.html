@@ -9,101 +9,118 @@
   <body>
     <!-- Same header as index.html -->
     <header>
-        <div class="wrapper">
-            <div class="logo">
-                <svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 137.42 59.21">
-                    <path
-                        d="M27.77 25.07c.3 10.62-8.33 19.24-18.94 19.53-3.16.09-6.16-.61-8.83-1.89 5.04 6.95 13.32 11.38 22.55 11.12 14.86-.41 26.58-12.8 26.17-27.66C48.3 11.31 35.92-.4 21.05.01 14.57.19 8.68 2.65 4.14 6.61c1.17-.26 2.38-.42 3.62-.45 10.62-.3 19.72 8.3 20.01 18.92Z" />
-                    <text style="font-family:Broadway,Broadway;font-size:30px" transform="translate(48.8 51.77)">
-                        <tspan x="0" y="0" style="letter-spacing:-.03em">r</tspan>
-                        <tspan x="14.88" y="0">eam</tspan>
-                    </text>
-                    <path
-                        d="m73.01 19.93-4.35 2.83-.13 5.18-4.04-3.26-4.97 1.47 1.86-4.84-2.94-4.28 5.18.27 3.16-4.11 1.34 5.01 4.89 1.73zM103.78 9.33l-3.52 3.81 1.14 5.06-4.71-2.17-4.46 2.64.61-5.15-3.89-3.42 5.08-1.01 2.06-4.76 2.53 4.52 5.16.48zM132.33 22.15l-4.35 2.83-.14 5.18-4.03-3.26-4.97 1.47 1.86-4.84-2.94-4.28 5.18.27 3.16-4.11 1.34 5.01 4.89 1.73z" />
-                </svg>
+        <nav class="navbar bg-body-tertiary navbar-expand-md">
+            <div class="container-fluid">
+                <a href="index.html" class="navbar-brand d-flex">
+                    <div class="align-self-center">
+                        <img src="images/clarkmediaprologo.svg" alt="ClarkMediaPro logo">
+                    </div>
+                    <div class="d-inline-block mx-2">
+                        <p class="my-0">ClarkMediaPro</p>
+                        <p class="my-0 fs-6">Wher creativity meet visual storytelling</p>
+                    </div>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#main-nav" aria-controls="main-nav" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="main-nav" aria-labelledby="main-nav">
+                    <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="main-nav">ClarkMediaPro</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="service.html">Service</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">About</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <div class="brandname">
-                <h1>ClarkMediaPro</h1>
-                <p>Where Creativity meet visual storytelling</p>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="service.html">Service</a></li>
-                    <li><a href="about.html">About</a></li>
-                </ul>
-            </nav>
-        </div>
+        </nav>
     </header>
     <!-- Services carousel: including 3 services -->
-    <div class="category">
-        <div class="category-video">
-            <img src="" alt="">
-            <div class="wrapper">
-                <h2>Video Production</h2>
-                <p>Our dedicated team of video production experts has meticulously crafted a space that combines functionality, creativity, and technical excellence.</p>
+    <div id="service-type" class="category carousel slide">
+        <div class="carousel-inner">
+            <div class="category-video carousel-item active">
+                <img class="d-block w-100" src="images/service-video.jpeg" alt="video production service">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>First slide label</h5>
+                    <p>Some representative placeholder content for the first slide.</p>
+                  </div>
             </div>
-        </div>
-        <div class="category-photo">
-            <img src="" alt="">
-            <div class="wrapper">
-                <h2>Photo graphy</h2>
-                <p>At ClarkMediaPro we specialize in capturing the essence of life's most cherished moments. Our photography service is dedicated to immortalizing your precious memories, whether it's a heartwarming family portrait, a joyful celebration, or a significant milestone.</p>
+            <div class="category-photo carousel-item">
+                <img class="d-block w-100" src="images/service-photography.jpeg" alt="Photography service">
+                <div class="container-fluid carousel-caption d-none d-md-block">
+                    <h2 class="service-type-title">Photo graphy</h2>
+                    <p>At ClarkMediaPro we specialize in capturing the essence of life's most cherished moments. Our photography service is dedicated to immortalizing your precious memories, whether it's a heartwarming family portrait, a joyful celebration, or a significant milestone.</p>
+                </div>
             </div>
-        </div>
-        <div class="category-web">
-            <img src="" alt="">
-            <div class="wrapper">
-                <h2>Web Dev</h2>
-                <p>Our skilled team of web developers harnesses the power of code and creativity to transform your visions into captivating online experiences. From stunning designs to seamless functionality, we wave our wands of expertise to craft websites that charm and captivate.</p>
+            <div class="category-web carousel-item">
+                <img class="d-block w-100" src="images/service-webdev.png" alt="">
+                <div class="container-fluid carousel-caption d-none d-md-block">
+                    <h2 class="service-type-title">Web Dev</h2>
+                    <p>Our skilled team of web developers harnesses the power of code and creativity to transform your visions into captivating online experiences. From stunning designs to seamless functionality, we wave our wands of expertise to craft websites that charm and captivate.</p>
+                </div>
             </div>
         </div>
         <!-- category indicators -->
-        <div class="category-indicators">
-            <button type="button"></button>
-            <button type="button"></button>
-            <button type="button"></button>
-        </div>
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#service-type" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#service-type" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#service-type" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
         <!-- slides contorl button. Hidden on mobile devices -->
-        <button></button>
-        <button></button>
+        <button class="carousel-control-prev" type="button" data-bs-target="#service-type" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#service-type" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
     </div>
     <!-- Pointing down arrow -->
     <div class="down-arrow">
         <p>Featured projects</p>
-        <button type="button"></button>
+        <button type="button"><i class="bi bi-chevron-compact-down"></i></button>
     </div>
     <!-- Featured projects: associated with the service above -->
-    <div class="featured-projects wrapper">
+    <div class="featured-projects container-fluid">
         <section class="video-1">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/VOs2po0jWcc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe class="featured-video w-100" src="https://www.youtube.com/embed/VOs2po0jWcc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             <h3>Hand Made Sourdough Bread</h3>
             <p>They say that good things take time and that couldn't be ture when it comes to the art of sourdough bread</p>
         </section>
-        <section class="video-2">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/VOs2po0jWcc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <section class="featured-video video-2">
+            <iframe src="https://www.youtube.com/embed/VOs2po0jWcc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             <h3>Small Town Day Tour</h3>
             <p>Explore cobblestone streets, historic landmarks, and meet friendly locals. Immerse yourself in the tranquility and beauty of small-town life.They say that good things take time and that couldn't be ture when it comes to the art of sourdough bread</p>
         </section>
-        <section class="video-3">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/VOs2po0jWcc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <section class="featured-video video-3">
+            <iframe src="https://www.youtube.com/embed/VOs2po0jWcc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             <h3>Unfolding the beauty of Perth</h3>
             <p>Join us as we uncover hidden gems and immerse ourselves in the charm of this captivating city. Get ready to be amazed.</p>
         </section>
     </div>
     <!-- Same footer as index.html -->
-    <footer>
-        <div class="wrapper">
-            <div class="socialmedia">
-                <ul>
-                    <li><a href="">Instagram</a></li>
-                    <li><a href="">Twitter</a></li>
-                    <li><a href="">YouTube</a></li>
-                </ul>
+    <footer class="bg-primary">
+        <div class="container-fluid">
+            <div class="socialmedia text-center pt-2">
+                <a class="h1 col-2 text-black" href="#"><i class="fab fa-instagram"></i></a>
+                <a class="h1 col-2 offset-1 text-black" href="#"><i class="fab fa-twitter"></i></a>
+                <a class="h1 col-2 offset-1 text-black" href="#"><i class="fab fa-youtube"></i></a>
             </div>
-            <p>copyright&copy; ClarkMediaPro ALl Rights Reserved.</p>
+            <p class="text-center pb-2">copyright&copy; ClarkMediaPro ALl Rights Reserved.</p>
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/342db6fee9.js" crossorigin="anonymous"></script>
   </body>
 </html>
