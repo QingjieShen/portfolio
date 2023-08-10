@@ -50,7 +50,12 @@
         <!-- Banner: including banner img, description, and social media links -->
         <div class="about-banner row mb-4">
             <div class="col-xl-8">
-                <img class="w-100 mb-3" src="images/service-video.jpeg" alt="picture of us taking class on the studio">
+                <picture>
+                    <source class="w-100 mb-3" media="(min-width: 1200px)" srcset="images/service-video-768_x_511.png"/>
+                    <source class="w-100 mb-3" media="(min-width: 768px)" srcset="images/service-video-1200_x_799.png"/>
+                    <source class="w-100 mb-3" media="(max-width: 767px)" srcset="images/service-video-768_x_511.png" />
+                    <img class="w-100 mb-3" src="images/service-video.jpeg" alt="picture of us taking class on the studio">
+                </picture>
             </div>
             <div class="container-fluid col-xl-4 text-center">
                 <h2 class="mt-xl-5">WHO WE ARE</h2>
@@ -70,7 +75,12 @@
         <!-- Mission: including img, mission statement -->
         <div class="mission row justify-content-center">
             <div class="container-fluid col-md-5">
-                <img class="w-100 mb-3" src="images/mission.jpg" alt="picture of kent street">
+                <picture>
+                    <source class="w-100 mb-3" media="(min-width: 1200px)" srcset="images/mission-1200_x_1800.png"/>
+                    <source class="w-100 mb-3" media="(min-width: 768px)" srcset="images/mission-768_x_1151.png"/>
+                    <source class="w-100 mb-3" media="(max-width: 767px)" srcset="images/mission-1200_x_1800.png" />
+                    <img class="w-100 mb-3" src="images/mission.jpg" alt="picture of kent street">
+                </picture>
             </div>
             <div class="col-md-5 pe-md-5">
                 <div>
@@ -84,7 +94,12 @@
         <!-- Vision: including img, vision statment -->
         <div class="vision row justify-content-center">
             <div class="container-fluid col-md-5 order-md-last">
-                <img class="w-100 my-3" src="images/vision.jpg" alt="picture stands for our vision">
+                <picture>
+                    <source class="w-100 mb-3 mt-md-5" media="(min-width: 1200px)" srcset="images/vision-1200_x_800.png"/>
+                    <source class="w-100 mb-3 mt-md-5" media="(min-width: 768px)" srcset="images/vision-768_x_512.png"/>
+                    <source class="w-100 mb-3 mt-md-5" media="(max-width: 767px)" srcset="images/vision-1200_x_800.png" />
+                    <img class="w-100 my-3 mt-md-5" src="images/vision.jpg" alt="picture stands for our vision">
+                </picture>
             </div>
             <div class="col-md-5 ps-md-5">
                 <div>
