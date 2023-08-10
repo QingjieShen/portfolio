@@ -96,19 +96,32 @@ body {
 }
 
 @media screen and (min-width:768px) {
-/* Set homepage video description position */
-.video-description {
-    bottom: 12%;
+    /* Set homepage video description position */
+    .video-description {
+        bottom: 12%;
+    }
+
+    /* Set homepage video link position */
+    .watch-more-button {
+        bottom: 12%;
+    }
+
+    /* Set homepage banner text position */
+    .banner-content div {
+        top: 20%;
+    }
+
 }
 
-/* Set homepage video link position */
-.watch-more-button {
-    bottom: 12%;
-}
+@media screen and (min-width:992px) {
+    /* service description position styling */
+    .service-discription-p {
+        bottom: 15%;
+    }
 
-/* Set homepage banner text position */
-.banner-content div {
-    top: 20%;
-}
-
+    /* Carousel indicators position styling */
+    .cacrousel-indicators-position {
+        bottom: 10%;
+    }
+    
 }
