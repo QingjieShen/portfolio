@@ -1,3 +1,40 @@
+:root {
+    --primary-color: #F0C084;
+    --secondary-color: #84B4F0;
+}
+
+.text-primary {
+    color: var(--primary-color) !important;
+}
+
+.text-secondary {
+    color: var(--secondary-color) !important;
+}
+
+.bg-primary {
+    background-color: var(--primary-color) !important;
+}
+
+.bg-secondary {
+    background-color: var(--secondary-color) !important;
+}
+
+.bg-primary-opacity-25 {
+    background: rgba(240,192,132,0.25) !important;
+}
+
+.bg-primary-opacity-50 {
+    background: rgba(240,192,132,0.5) !important;
+}
+
+.bg-secondary-opacity-25 {
+    background: rgba(132,180,240,0.25) !important;
+}
+
+.bg-secondary-opacity-50 {
+    background: rgba(132,180,240,0.5) !important;
+}
+
 body {
     overflow-y: scroll;
     scroll-snap-type: y mandatory;
