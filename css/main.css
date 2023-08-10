@@ -25,14 +25,20 @@ body {
     bottom: 15%;
 }
 
+/* Set homepage section title position */
+.section-title {
+    top: 10%;
+    right: 0.1%;
+}
+
 /* Set homepage video description position */
 .video-description {
-    bottom: 20%;
+    bottom: 30%;
 }
 
 /* Set homepage video link position */
 .watch-more-button {
-    bottom: 10%;
+    bottom: 22%;
 }
 
 /* service description position styling */
