@@ -61,4 +61,10 @@ body {
 .watch-more-button {
     bottom: 12%;
 }
+
+/* Set homepage banner text position */
+.banner-content div {
+    top: 25%;
+}
+
 }
