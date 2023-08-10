@@ -11,8 +11,8 @@
     <!-- Add slides div to make full screen scrolling effect -->
     <div class="slides slide1 vh-100">
         <!-- Header: contains logo, tagline, brand nane, and main nav bar -->
-        <header>
-            <nav class="navbar bg-body-tertiary navbar-expand-md fixed-top bg-primary-opacity-25">
+        <header role="banner">
+            <nav class="navbar bg-body-tertiary navbar-expand-md fixed-top bg-primary-opacity-25" role="navigation">
                 <div class="container-fluid">
                     <a href="index.html" class="navbar-brand d-flex">
                         <div class="align-self-center">
@@ -62,7 +62,7 @@
     </div>
     <div class="slides slide2 vh-100">
         <!-- First Section (Video Production): contains a Video, section title, section introduction, and a button -->
-        <section class="video-production">
+        <section class="video-production" role="region">
             <!-- embedded video -->
             <div class="video-content position-relative">
                 <video id="video-production-video" class="object-fit-cover vw-100 vh-100" src="videos/videography-video.mp4" autoplay muted loop playsinline></video>
@@ -85,7 +85,7 @@
     </div>
     <div class="slides slide3 vh-100">
         <!-- Section Section (Photography): contains a Video, section title, section introduction, and a button -->
-        <section class="photography">
+        <section class="photography" role="region">
             <!-- embedded video -->
             <div class="video-content position-relative">
                 <video class="object-fit-cover vw-100 vh-100" src="videos/photography-video.mp4" autoplay muted loop playsinline></video>
@@ -109,7 +109,7 @@
     </div>
     <div class="slides slide4 vh-100">
          <!-- Third Section (Web Dev): contains a Video, section title, section introduction, and a button -->
-        <section class="web-dev">
+        <section class="web-dev" role="region">
             <!-- embedded video -->
             <div class="video-content position-relative">
                 <video class="object-fit-cover vw-100 vh-100" src="videos/webdev-video.mp4" autoplay muted loop playsinline></video>
@@ -131,7 +131,7 @@
         </section>
     </div>
     <!-- Footer: contains 3 social media links and the copyright statement -->
-    <footer class="bg-primary bg-primary-opacity-50 fixed-bottom">
+    <footer class="bg-primary bg-primary-opacity-50 fixed-bottom" role="contentinfo">
         <div class="container-fluid row align-content-center justify-content-center">
             <div class="socialmedia text-center pt-1 pb-md-2 col-md-5 col-xl-2 order-md-last">
                 <a class="h1 col-2 text-black" href="#"><i class="fab fa-instagram"></i></a>
