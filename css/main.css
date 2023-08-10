@@ -40,6 +40,13 @@ body {
     scroll-snap-type: y mandatory;
 }
 
+/* Skip link styly */
+.skip-link {
+    display: inline-block;
+    position: absolute;
+    top: 10%;
+}
+
 /* navbar logo size seting */
 .navbar-brand img {
     height: 50px;
