@@ -7,130 +7,133 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
 </head>
-<body class="vh-100 overflow-y-scroll" id="scroll-container">
-    <!-- Add slides div to make full screen scrolling effect -->
-    <div class="slides slide1 vh-100">
-        <!-- Header: contains logo, tagline, brand nane, and main nav bar -->
-        <header role="banner">
-            <nav class="navbar bg-body-tertiary navbar-expand-md fixed-top bg-black bg-opacity-50" role="navigation">
-                <div class="container-fluid">
-                    <a href="index.html" class="navbar-brand d-flex">
-                        <div class="align-self-center">
-                            <img src="images/clarkmediaprologo.svg" alt="ClarkMediaPro logo">
-                        </div>
-                        <div class="d-inline-block mx-2">
-                            <p class="my-0">ClarkMediaPro</p>
-                            <p class="my-0 fs-6">Creativity & visual storytelling</p>
-                        </div>
-                    </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#main-nav" aria-controls="main-nav" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="offcanvas offcanvas-end" tabindex="-1" id="main-nav" aria-labelledby="main-nav">
-                        <div class="offcanvas-header bg-primary">
-                            <h5 class="offcanvas-title">ClarkMediaPro</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                        </div>
-                        <div class="offcanvas-body">
-                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                                <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="service.html">Service</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="about.html">About</a>
-                                </li>
-                            </ul>
-                        </div>
+<body class="vh-100" id="scroll-container">
+    <!-- Header: contains logo, tagline, brand nane, and main nav bar -->
+    <header role="banner">
+        <nav class="navbar bg-body-tertiary navbar-expand-md fixed-top bg-black bg-opacity-50" role="navigation">
+            <div class="container-fluid">
+                <a href="index.html" class="navbar-brand d-flex">
+                    <div class="align-self-center">
+                        <img src="images/clarkmediaprologo.svg" alt="ClarkMediaPro logo">
+                    </div>
+                    <div class="d-inline-block mx-2">
+                        <p class="my-0">ClarkMediaPro</p>
+                        <p class="my-0 fs-6">Creativity & visual storytelling</p>
+                    </div>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#main-nav" aria-controls="main-nav" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="main-nav" aria-labelledby="main-nav">
+                    <div class="offcanvas-header bg-primary">
+                        <h5 class="offcanvas-title">ClarkMediaPro</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="service.html">Service</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">About</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-            </nav>
-        </header>
-        <!-- Skip link -->
-        <a class="skip-link text-black container-fluid" href="#maincontent">Skip to Content &darr;</a>
-        <!-- Banner: contains banner image, welcome title, and action paragraphs -->
-        <div class="home-banner">
-            <div class="banner-content">
-                <div class="container-fluid text-white position-absolute">
-                    <div class="row bg-black bg-opacity-50 py-3 col-md-8 col-xl-6 ms-md-4">
-                        <h2 class="">Welcome to ClarkMediaPro</h2>
-                        <p>I am committed to understanding your unique goals and exceeding expectations. Let's collaborate and bring your vision to life.</p>
+            </div>
+        </nav>
+    </header>
+    <div class="scroll-container">
+        <!-- Add slides div to make full screen scrolling effect -->
+        <div class="slides slide1 vh-100">
+            <!-- Skip link -->
+            <a class="skip-link text-black container-fluid" href="#maincontent">Skip to Content &darr;</a>
+            <!-- Banner: contains banner image, welcome title, and action paragraphs -->
+            <div class="home-banner">
+                <div class="banner-content">
+                    <div class="container-fluid text-white position-absolute">
+                        <div class="row bg-black bg-opacity-50 py-3 col-md-8 col-xl-6 ms-md-4">
+                            <h2 class="">Welcome to ClarkMediaPro</h2>
+                            <p>I am committed to understanding your unique goals and exceeding expectations. Let's collaborate and bring your vision to life.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="slides slide2 vh-100">
-        <!-- First Section (Video Production): contains a Video, section title, section introduction, and a button -->
-        <section id="maincontent" class="video-production" role="region">
-            <!-- embedded video -->
-            <div class="video-content position-relative">
-                <video id="video-production-video" class="object-fit-cover vw-100 vh-100" src="videos/videography-video.mp4" autoplay muted loop playsinline></video>
-                <h2 class="section-title text-bg-dark bg-opacity-50 position-absolute m-4 py-3 px-2">Video Production</h2>
-                <div class="row justify-content-center">
-                    <div class="video-description text-bg-dark bg-opacity-50 position-absolute py-3 px-2 mb-4 col-12 col-md-5 ms-md-4">
-                        <div>
-                            <h3>Cinematic Craftsmanship</h3>
+        <div class="slides slide2 vh-100">
+            <!-- First Section (Video Production): contains a Video, section title, section introduction, and a button -->
+            <section id="maincontent" class="video-production" role="region">
+                <!-- embedded video -->
+                <div class="video-content position-relative">
+                    <video id="video-production-video" class="object-fit-cover vw-100 vh-100" src="videos/videography-video.mp4" autoplay muted loop playsinline></video>
+                    <h2 class="section-title text-bg-dark bg-opacity-50 position-absolute m-4 py-3 px-2">Video Production</h2>
+                    <div class="row justify-content-center justify-content-md-start">
+                        <div class="video-description text-bg-dark bg-opacity-50 position-absolute py-3 px-2 mb-4 col-12 col-md-5 ms-md-4">
+                            <div>
+                                <h3>Cinematic Craftsmanship</h3>
+                            </div>
+                            <div class="text-md-start">
+                                <p>Capture the essence of your vision with our exceptional video production service, where creativity and precision converge to bring your story to life in stunning detail.</p>
+                            </div>
                         </div>
-                        <div class="text-md-start">
-                            <p>Capture the essence of your vision with our exceptional video production service, where creativity and precision converge to bring your story to life in stunning detail.</p>
+                        <div class="watch-more-button w-100 text-center position-absolute mb-md-4 text-md-end col-md-2">
+                            <a class="btn btn-light btn-lg py-3 px-5 text-black link-underline link-underline-opacity-0" href="service.html#first-featured-project">Watch More</a>
                         </div>
-                    </div>
-                    <div class="watch-more-button w-100 text-center position-absolute mb-md-4 text-md-end col-md-2">
-                        <a class="btn btn-light btn-lg py-3 px-5 text-black link-underline link-underline-opacity-0" href="service.html#first-featured-project">Watch More</a>
                     </div>
                 </div>
-            </div>
-        </section>
-    </div>
-    <div class="slides slide3 vh-100">
-        <!-- Section Section (Photography): contains a Video, section title, section introduction, and a button -->
-        <section class="photography" role="region">
-            <!-- embedded video -->
-            <div class="video-content position-relative">
-                <video class="object-fit-cover vw-100 vh-100" src="videos/photography-video.mp4" autoplay muted loop playsinline></video>
-                <h2 class="section-title text-bg-dark bg-opacity-50 position-absolute m-4 py-3 px-2">Photography</h2>
-                <div class="row justify-content-center">
-                    <div class="video-description text-bg-dark bg-opacity-50 position-absolute py-3 px-2 mb-4 col-12 col-md-5 ms-md-4">
-                        <div>
-                            <h3>Lens & Light Chronicles</h3>
+            </section>
+        </div>
+        <div class="slides slide3 vh-100">
+            <!-- Section Section (Photography): contains a Video, section title, section introduction, and a button -->
+            <section class="photography" role="region">
+                <!-- embedded video -->
+                <div class="video-content position-relative">
+                    <video class="object-fit-cover vw-100 vh-100" src="videos/photography-video.mp4" autoplay muted loop playsinline></video>
+                    <h2 class="section-title text-bg-dark bg-opacity-50 position-absolute m-4 py-3 px-2">Photography</h2>
+                    <div class="row justify-content-center justify-content-md-start">
+                        <div class="video-description text-bg-dark bg-opacity-50 position-absolute py-3 px-2 mb-4 col-12 col-md-5 ms-md-4">
+                            <div>
+                                <h3>Lens & Light Chronicles</h3>
+                            </div>
+                            <div class="text-md-start">
+                                <p>Our photography service encapsulates the beauty of life's fleeting moments, preserving them in timeless images that tell your unique story with grace and artistry.</p>
+                            </div>
+                            
                         </div>
-                        <div class="text-md-start">
-                            <p>Our photography service encapsulates the beauty of life's fleeting moments, preserving them in timeless images that tell your unique story with grace and artistry.</p>
+                        <div class="watch-more-button w-100 text-center position-absolute mb-md-4 text-md-end col-md-2">
+                            <a class="btn btn-light btn-lg py-3 px-5 text-black link-underline link-underline-opacity-0" href="service.html#photography-featured-project">Watch More</a>
                         </div>
-                        
-                    </div>
-                    <div class="watch-more-button w-100 text-center position-absolute mb-md-4 text-md-end col-md-2">
-                        <a class="btn btn-light btn-lg py-3 px-5 text-black link-underline link-underline-opacity-0" href="service.html#photography-featured-project">Watch More</a>
                     </div>
                 </div>
-            </div>
-        </section>
-    </div>
-    <div class="slides slide4 vh-100">
-         <!-- Third Section (Web Dev): contains a Video, section title, section introduction, and a button -->
-        <section class="web-dev" role="region">
-            <!-- embedded video -->
-            <div class="video-content position-relative">
-                <video class="object-fit-cover vw-100 vh-100" src="videos/webdev-video.mp4" autoplay muted loop playsinline></video>
-                <h2 class="section-title text-bg-dark bg-opacity-50 position-absolute m-4 py-3 px-2">Web Development</h2>
-                <div class="row justify-content-center justify-content-md-start">
-                    <div class="video-description text-bg-dark bg-opacity-50 position-absolute py-3 px-2 mb-4 col-12 col-md-5 ms-md-4">
-                        <div>
-                            <h3>Crafting Digital Magic</h3>
+            </section>
+        </div>
+        <div class="slides slide4 vh-100">
+            <!-- Third Section (Web Dev): contains a Video, section title, section introduction, and a button -->
+            <section class="web-dev" role="region">
+                <!-- embedded video -->
+                <div class="video-content position-relative">
+                    <video class="object-fit-cover vw-100 vh-100" src="videos/webdev-video.mp4" autoplay muted loop playsinline></video>
+                    <h2 class="section-title text-bg-dark bg-opacity-50 position-absolute m-4 py-3 px-2">Web Development</h2>
+                    <div class="row justify-content-center justify-content-md-start">
+                        <div class="video-description text-bg-dark bg-opacity-50 position-absolute py-3 px-2 mb-4 col-12 col-md-5 ms-md-4">
+     
+                       <div>
+                                <h3>Crafting Digital Magic</h3>
+                            </div>
+                            <div class="text-md-start">
+                                <p>Step into the realm of digital enchantment with our Web Dev Wizards! We bring the magic of technology to life.</p>
+                            </div>
                         </div>
-                        <div class="text-md-start">
-                            <p>Step into the realm of digital enchantment with our Web Dev Wizards! We bring the magic of technology to life.</p>
+                        <div class="watch-more-button w-100 text-center position-absolute mb-md-4 text-md-end col-md-2">
+                            <button class="py-3 px-5 btn btn-light btn-lg" role="button"  type="button">Watch More</button>
                         </div>
-                    </div>
-                    <div class="watch-more-button w-100 text-center position-absolute mb-md-4 text-md-end col-md-2">
-                        <button class="py-3 px-5 btn btn-light btn-lg" role="button"  type="button">Watch More</button>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </div>
     </div>
     <!-- Footer: contains 3 social media links and the copyright statement -->
     <footer class="bg-white bg-opacity-50 fixed-bottom" role="contentinfo">

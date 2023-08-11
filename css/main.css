@@ -35,7 +35,9 @@
     background: rgba(132,180,240,0.5) !important;
 }
 
-body {
+/* make the website scroll full page eachtime */
+.scroll-container {
+    height: 100vh;
     overflow-y: scroll;
     scroll-snap-type: y mandatory;
 }
